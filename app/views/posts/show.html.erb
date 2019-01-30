@@ -1,0 +1,19 @@
+<h1>Hello from show</h1>
+<%= notice %>
+
+
+<p>
+  <label>ID: </label>
+    <%= @post.id %>
+</p>
+<p>
+  <label>Title: </label>
+    <%= @post.title %>
+</p>
+<p>
+  <label>Post Body: </label>
+    <%= @post.body %>
+</p>
+
+<p><%= link_to "Edit this Post", edit_post_path(@post) %></p>
+<p><%= link_to "All Posts", posts_path %></p>
